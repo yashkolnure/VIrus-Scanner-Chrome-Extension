@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Secure Your Downloads",
+  "version": "1.0",
+  "description": "Monitors downloads and sends them for scanning.",
+  "permissions": ["downloads", "scripting", "storage", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
